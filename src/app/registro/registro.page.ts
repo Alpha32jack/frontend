@@ -22,7 +22,7 @@ export class RegistroPage {
     this.studentForm = this.fb.group({
       name: ['', [Validators.required, Validators.maxLength(10)]],
       email: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required, ]],
+      password: ['', [Validators.required]],
     });
   }
 

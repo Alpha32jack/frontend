@@ -1,0 +1,54 @@
+<ion-content [fullscreen]="true" style="padding: 0; position: relative;">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+  <ion-img class="imagen-fondo" src="assets/Imagenes_ini_se/ini_se.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/Imagenes_ini_se/INICIAR_SESION.png"></ion-img>
+
+  <form (ngSubmit)="inicio_se()">
+    <ion-input
+      [(ngModel)]="credentials.email"
+      name="email"
+      class="rounded-input"
+      type="text"
+      placeholder="Correo Electrónico"
+      required
+    ></ion-input>
+    <ion-input
+      [(ngModel)]="credentials.password"
+      name="phone"
+      class="rounded-input-2"
+      type="tel"
+      placeholder="contraseña"
+      required
+    ></ion-input>
+
+    <div class="remember-session-container">
+      <ion-label class="titulo-3-h2">Recordar Sesión</ion-label>
+      <ion-checkbox [(ngModel)]="rememberMe" name="rememberMe"></ion-checkbox>
+    </div>
+
+    <ion-button
+      class="boton-personalizado"
+      type="submit"
+      [disabled]="!credentials.email || !credentials.password"
+      shape="round"
+    >
+      <ion-label class="titulo-1-h2" slot="start">Iniciar Sesión</ion-label>
+    </ion-button>
+  </form>
+
+  <a
+    (click)="recu_cont()"
+    class="titulo-2-h2"
+    style="color: #3880ff; text-decoration: underline;"
+  >
+    REGISTRARSE
+  </a>
+
+  <ion-toast
+    [message]="errorMessage"
+    [duration]="2000"
+    *ngIf="errorMessage"
+  ></ion-toast>
+</ion-content>

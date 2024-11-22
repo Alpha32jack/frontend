@@ -1,0 +1,26 @@
+<ion-content class="fond">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+  <ion-img class="imagen-fondo" src="assets/imagenes_recu/Fondo.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/imagenes_recu/VERIFICACION_DE_IDENTIDAD.png"></ion-img>
+  <div class="container">
+    <ion-label class="titulo-3-h2">Escribe el código que hemos enviado al correo xxxxexam.com</ion-label>
+    <div class="code-inputs">
+      <ion-input class="co-1" #codeInput0 type="tel" maxlength="1" [(ngModel)]="code[0]" (ionInput)="onInputChange($event, 0)"></ion-input>
+      <ion-input class="co-1"#codeInput1 type="tel" maxlength="1" [(ngModel)]="code[1]" (ionInput)="onInputChange($event, 1)"></ion-input>
+      <ion-input class="co-1"#codeInput2 type="tel" maxlength="1" [(ngModel)]="code[2]" (ionInput)="onInputChange($event, 2)"></ion-input>
+      <ion-input class="co-1"#codeInput3 type="tel" maxlength="1" [(ngModel)]="code[3]" (ionInput)="onInputChange($event, 3)"></ion-input>
+      <ion-input class="co-1"#codeInput4 type="tel" maxlength="1" [(ngModel)]="code[4]" (ionInput)="onInputChange($event, 4)"></ion-input>
+      <ion-input class="co-1"#codeInput5 type="tel" maxlength="1" [(ngModel)]="code[5]" (ionInput)="onInputChange($event, 5)"></ion-input>
+    </div>
+    
+    
+    
+    
+    <p class="timer">{{ formatTime(timer) }}</p>
+    <label href="#" (click)="resendCode()" class="resend-link">Reenviar Código</label>
+    <ion-button class="boton-personalizado" shape="round" (click)="confirmCode()">Confirmar</ion-button>
+  </div>
+</ion-content>
+

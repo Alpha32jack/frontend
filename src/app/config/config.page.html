@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="config-container">
+   <ion-img  src="assets/imagenes_de_config/Configuracion.png"></ion-img>
+    <br>
+
+    <!-- modificar para que solo muestre -->
+    <div class="user-avatar">
+      <button class="foto-button" (click)="abrirSelector()">
+      <img *ngIf="!imagenUrl" class="foto" name="person-circle-outline" size="large" />
+      <img *ngIf="imagenUrl" [src]="imagenUrl" class="foto" /> </button>
+
+      <input #fileInput type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;"/>
+    </div>
+    <!---->
+    <h2>Nombre de Usuario</h2>
+    <ion-button class="boton-personalizado-2" expand="round" (click)="editProfile()">Editar Perfil</ion-button>
+    <ion-button class="boton-personalizado-2" expand="round" (click)="changePassword()">Cambiar Contraseña</ion-button>
+    <ion-button class="boton-personalizado-3" expand="round" (click)="logout()">Cerrar Sesion</ion-button>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start"  type="submit" (click)="campa()">
+      <ion-button>
+        <ion-img src="assets/imagenes_de_config/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="center"  type="submit" (click)="pers()">
+      <ion-button>
+        <ion-img src="assets/imagenes_de_config/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end"  type="submit">
+      <ion-button>
+        <ion-img src="assets/imagenes_de_config/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

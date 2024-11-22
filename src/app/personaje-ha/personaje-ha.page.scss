@@ -1,0 +1,442 @@
+.font{
+    font-family: "Hexen";
+}
+.banck-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+.banck-button_2 {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    right: 40px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+  }
+  .banck-button_3 {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    right:190px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+  }
+  
+.banck {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: 40px;
+    object-fit: contain;
+}
+
+.foto {
+    position: absolute;
+    top: 5vh;
+    right: 55%;
+    width: 150px!important; /* Ajusta el tamaño de la imagen */
+    height: 230px;
+    object-fit: contain!important;
+}
+.remini_letra {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 10%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 45%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.Bloqueo {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 14%; /* Ajusta la posición vertical según sea necesario */
+    left: 52%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 18%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.Bloqueo-numero {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 16.5%; /* Ajusta la posición vertical según sea necesario */
+    left: 57.5%; /* Ajusta la posición horizontal según sea necesario */
+    font-size:30px ;
+
+}
+.Bloqueo-n {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 23%; /* Ajusta la posición vertical según sea necesario */
+    left: 52%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 18%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.esquivar {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 14%; /* Ajusta la posición vertical según sea necesario */
+    left: 79%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 16%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.esquivar-numero {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 16.5%; /* Ajusta la posición vertical según sea necesario */
+    left: 83.5%; /* Ajusta la posición horizontal según sea necesario */
+    font-size:30px ;
+
+}
+.esquivar-n {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 23%; /* Ajusta la posición vertical según sea necesario */
+    left: 79%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 18%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.vida {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 30%; /* Ajusta la posición vertical según sea necesario */
+    left: 20%; /* Ajusta la posición horizontal según sea necesario */
+    background: transparent;
+    width: 18%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.barra-vida{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 32%; /* Ajusta la posición vertical según sea necesario */
+    left: 12%; /* Ajusta la posición horizontal según sea necesario */
+    height: 1.2vh;
+    width: 35vw; 
+
+    /* Aplica borde redondeado */
+    border-radius: 50px; /* Bordes redondeados externos */
+    overflow: hidden; /* Evita que el progreso interno sobresalga */
+    
+    /* Variables de Ionic para redondeado y colores */
+    --border-radius: 50px;
+    --background: rgba(0, 255, 0, 0.3); /* Fondo más tenue */
+    --progress-background: #4CAF50; /* Color del progreso */
+}
+.barra-mana{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 32%; /* Ajusta la posición vertical según sea necesario */
+    left: 56%; /* Ajusta la posición horizontal según sea necesario */
+    height: 1.2vh;
+    width: 35vw; 
+
+    /* Aplica borde redondeado */
+    border-radius: 50px; /* Bordes redondeados externos */
+    overflow: hidden; /* Evita que el progreso interno sobresalga */
+    
+    /* Variables de Ionic para redondeado y colores */
+    --border-radius: 50px;
+}
+.vid{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 34%; /* Ajusta la posición vertical según sea necesario */
+    left: 26%; /* Ajusta la posición horizontal según sea necesario */
+}
+.MANA {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 30%; /* Ajusta la posición vertical según sea necesario */
+    left: 68%; /* Ajusta la posición horizontal según sea necesario */
+    background: transparent;
+    width: 10%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.man{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 34%; /* Ajusta la posición vertical según sea necesario */
+    left: 70%; /* Ajusta la posición horizontal según sea necesario */
+}
+.NIVEL {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 38%; /* Ajusta la posición vertical según sea necesario */
+    left: 11%; /* Ajusta la posición horizontal según sea necesario */
+    background: transparent;
+    width: 12%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+
+.barra-expe{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 40%; /* Ajusta la posición vertical según sea necesario */
+    left: 10%; /* Ajusta la posición horizontal según sea necesario */
+    height: 1.2vh;
+    width: 80vw; 
+
+    /* Aplica borde redondeado */
+    border-radius: 50px; /* Bordes redondeados externos */
+    overflow: hidden; /* Evita que el progreso interno sobresalga */
+    
+    /* Variables de Ionic para redondeado y colores */
+    --border-radius: 50px;
+
+}
+.Exp{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 38%; /* Ajusta la posición vertical según sea necesario */
+    left: 80%; /* Ajusta la posición horizontal según sea necesario */
+
+    width: 8%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.ex{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 42%; /* Ajusta la posición vertical según sea necesario */
+    left: 44%; /* Ajusta la posición horizontal según sea necesario */
+}
+
+.lin{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 46.6%; /* Ajusta la posición vertical según sea necesario */
+    left: 3%; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 10; 
+    width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 390px; /* Limita el tamaño máximo */
+}
+
+.stat-grid{
+    background-color: #252525;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    position: relative;
+    top: 40.4%;
+}
+.stat-grid ion-col{
+    width: 30rem;
+}
+.Est{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 48%; /* Ajusta la posición vertical según sea necesario */
+    left: 3%; /* Ajusta la posición horizontal según sea necesario */
+
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.habi{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 43%; /* Ajusta la posición vertical según sea necesario */
+    left: 36%; /* Ajusta la posición horizontal según sea necesario */
+    background: transparent;
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.inv{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 43%; /* Ajusta la posición vertical según sea necesario */
+    left: 40%; /* Ajusta la posición horizontal según sea necesario */
+
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .div-list{
+    position: absolute;
+    top: 3vh;
+    left: 200px;
+    transform: translateX(-49%);
+    width: 390px;
+    height: 250px;
+    overflow-y: scroll;
+  
+  }
+
+.lit_player{
+    --background: #636363;
+    font-family: "Hexen";
+    font-size: 20px;
+  }
+  .lit_player-2{
+    font-family: "Hexen";
+    font-size: 20px;
+  }
+
+  .div-list-2{
+    position: absolute;
+    top: 8.5vh;
+    left: 200px;
+    transform: translateX(-49%);
+    width: 390px;
+    height: 270px;
+    overflow-y: scroll;
+  
+  }
+  .Add{
+    background: transparent;
+    position: absolute;
+    top: 39.5vh;
+    left: 130px;
+    width: 38%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+  }
+  ion-modal {
+    --width: 80vw;
+    --height: 30vh;
+    --border-radius: 15px;
+  
+  }
+  .ion-modal-2 {
+    --width: 85vw;
+    --height: 60vh;
+    --border-radius: 15px;
+  
+  }
+  .ion-padding {
+    --background: #ffffff; // Asegura que el contenido tenga fondo blanco
+  }
+  .button-edi{
+    background: transparent;
+    display: flex;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    right: 20px; /* Ajusta la posición a la izquierda */
+  }
+  .edi{
+    width: 30px;
+  }
+  .div-modal{
+    position: absolute;
+    top: 5px; /* Ajusta la posición superior */
+    right: 4px; /* Ajusta la posición a la izquierda */
+    background:black;
+    width: 78vw;
+    height: 29vh;
+    border-radius: 15px;
+  
+  }
+  .div-modal-2{
+    position: absolute;
+    top: 5px; /* Ajusta la posición superior */
+    right: 4.5px; /* Ajusta la posición a la izquierda */
+    background:black;
+    width: 83vw;
+    height: 59vh;
+    border-radius: 15px;
+  
+  }
+.expe{
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 12vw; /* Ajusta la posición superior */
+    left: 8vh;
+    width: 230px;
+}
+
+.label-modal{
+    text-align: left;
+    color: #ffffff;
+    font-weight: bold;
+}
+.div-list-modal{
+    position: absolute;
+    top: 12vh;
+    left: 200px;
+    transform: translateX(-48%);
+    width: 390px;
+    height: 250px;
+  
+  }
+  .div-list-modal-2{
+    position: absolute;
+    top: 9vh;
+    left: 200px;
+    transform: translateX(-48%);
+    width: 390px;
+    height: 250px;
+  
+  }
+.lit_player-modal{
+    --background: transparent;
+    font-family: "Hexen";
+    font-size: 18px;
+  }
+
+  .boton-personalizado-2 {
+    --background: #3D98EC; /* Color de fondo personalizado */
+    --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 40vw; /* Para pantallas más grandes como tablets o PC */
+    height: 5vh;
+  
+    box-sizing: border-box;
+   
+    position: absolute;
+    top: 22.5vh;
+    left: 8vh;
+  
+    font-weight: bold; /* negrita */
+   
+  
+  }
+  .boton-personalizado-3 {
+    --background: #3D98EC; /* Color de fondo personalizado */
+    --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 40vw; /* Para pantallas más grandes como tablets o PC */
+    height: 5vh;
+  
+    box-sizing: border-box;
+   
+    position: absolute;
+    top: 40.5vh;
+    left: 8vh;
+  
+    font-weight: bold; /* negrita */
+   
+  
+  }
+  .boton-personalizado-4 {
+    --background: #3D98EC; /* Color de fondo personalizado */
+    --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 40vw; /* Para pantallas más grandes como tablets o PC */
+    height: 5vh;
+  
+    box-sizing: border-box;
+   
+    position: absolute;
+    top: 51.5vh;
+    left: 10vh;
+  
+    font-weight: bold; /* negrita */
+   
+  
+  }
+  .titulo-1-h2 {
+    font-size: 18px; /* Ajusta el tamaño según sea necesario */
+    font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+    color: #ffffff; /* Cambia el color del texto según sea necesario */
+  }
+  .descripcion-input {
+    background-color: #252525;
+    display: flex; /* Asegura que el campo ocupe todo el ancho */
+    width: 250%; /* Ocupa el espacio disponible */
+    height: 40px; /* Altura máxima antes de permitir scroll */
+    overflow-y: scroll; /* Agrega scroll cuando el contenido supera el tamaño */
+    padding: 8px; /* Espaciado interno */
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 5px; /* Bordes redondeados */
+    white-space: pre-wrap; /* Permite texto en varias líneas */
+    word-break: break-word; /* Divide palabras largas */
+  }
+  

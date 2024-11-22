@@ -1,0 +1,17 @@
+<ion-content [fullscreen]="true" style="padding: 0; position: relative;">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+  <ion-img class="imagen-fondo" src="assets/imagenes_recu/Fondo-2.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/imagenes_recu/CAMBIO_DE _CONTRASEÑA.png"></ion-img>
+  <form>
+    <ion-input [(ngModel)]="ContraUser" class="rounded-input" type="password" placeholder="Contraseña nueva"></ion-input>
+    <ion-input [(ngModel)]="ContraUser_confir" class="rounded-input-2" type="password" placeholder="Confirma contraseña"></ion-input>
+    
+
+    <ion-button class="boton-personalizado" type="submit" (click)="inicio_se()" shape="round">
+    <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label></ion-button>
+
+  </form>
+
+</ion-content>

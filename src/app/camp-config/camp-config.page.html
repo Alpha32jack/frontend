@@ -1,0 +1,113 @@
+<ion-content  class="font" [fullscreen]="true">
+
+  <!-- Botón de regreso -->
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+
+
+  <!-- Imagen de fondo -->
+  <ion-img class="imagen-fondo" src="assets/Imagenes_camp/Fondo.png"></ion-img>
+  
+  <!-- Nombre de la campaña -->
+  <ion-img class="remini_letra" src="assets/Imagenes_camp/Nombre_Campaña.png"></ion-img>
+
+  <!-- Contenedor para ID y nombre del master -->
+  <div class="remember-session-container">
+    <ion-label class="titulo-3-h2">ID:</ion-label>
+    <ion-label class="titulo-4-h2">Nombre del master</ion-label>
+  </div>
+  
+
+ <div class="div-list">
+  <ion-list>
+    <ion-item *ngFor="let item of items; let index" class="lit_player">
+      <ion-avatar slot="start">
+        <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+      </ion-avatar>
+      <ion-label class="label-1">
+        {{ index + 1 }}
+      <ion-label class="label-2">ID: ######</ion-label>
+      </ion-label>
+      <button class="delete-button">
+        <ion-img class="X" src="assets/Imagenes_camp/X.png"></ion-img>
+      </button>
+    </ion-item>
+  </ion-list>
+</div>
+
+  <!-- Botón para agregar nuevo jugador -->
+  <button class="Add_player" (click)="setOpen(true)" >
+    <ion-img src="assets/Imagenes_camp/Add_Player.png"></ion-img>
+  </button>
+
+
+
+
+  <!-- Modal pequeño -->
+  <ion-modal [isOpen]="isModalOpen" >
+    <ng-template>  
+      <ion-content class="ion-padding">
+        <div>
+          <ion-img class="avatar" src="assets/Imagenes_camp/Icon.png"></ion-img>
+          <ion-searchbar class="lupa" animated="true" placeholder="Nombre ID"></ion-searchbar>
+          <button class="button-x " (click)="setOpen(false)">
+            <ion-img  src="assets/Imagenes_camp/x-black.png"></ion-img>
+          </button>
+          
+          <div class="div-list-2">
+            <ion-list>
+              <ion-item *ngFor="let item of items; let index" >
+                <ion-avatar slot="start">
+                  <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+                </ion-avatar>
+                <ion-label class="label">
+                  {{ index + 1 }}
+                </ion-label>
+                <button class="au-button">
+                  <ion-img class="X" src="assets/Imagenes_camp/aumentar.png"></ion-img>
+                </button>
+              </ion-item>
+            </ion-list>
+          </div>
+          <ion-button class="boton-personalizado-2" type="submit" (click)="inicio_part()" shape="round">
+            <ion-label class="titulo-1-h2" slot="start">Invitar</ion-label>
+          </ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+
+
+  <!--  -->
+  <ion-button class="boton-personalizado" type="submit" (click)="inicio_part()" shape="round">
+    <ion-label class="titulo-1-h2" slot="start">Iniciar Campaña</ion-label>
+  </ion-button>
+
+</ion-content>
+
+<!-- Footer con iconos -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" type="submit">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons class="center" type="submit" (click)="pers()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" type="submit" (click)="config()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

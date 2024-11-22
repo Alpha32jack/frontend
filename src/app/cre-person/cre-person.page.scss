@@ -1,0 +1,116 @@
+ion-content {
+    padding: 0; /* Eliminar el relleno */
+    margin: 0; /* Eliminar el margen */
+}
+.banck-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+
+.banck {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: 40px;
+    object-fit: contain;
+}
+.imagen-fondo {
+    position: relative; /* Asegúrate de que esta imagen se mantenga en su posición normal */
+}
+.remini_letra {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 45%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, -10%); /* Centra la imagen en el medio */
+    width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 360px; /* Limita el tamaño máximo */
+}
+
+.remini_letra_2 {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 45%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-50%, 110%); /* Centra la imagen en el medio */
+    width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 360px; /* Limita el tamaño máximo */
+}
+.titulo-3-h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centrar el texto horizontalmente */
+    font-size: 16px; /* Ajusta el tamaño según sea necesario */
+    font-weight: bold; /* Cambia el peso si es necesario */
+    color: #bdbdbd; /* Color del texto */
+    max-width: 90%; /* Limita el ancho del texto */
+    margin: 0 auto; /* Centra el contenedor en la página */
+    padding: 10px; /* Espacio interno alrededor del texto */
+    word-wrap: break-word; /* Asegura que el texto largo se divida en varias líneas */
+    line-height: 1.5; /* Ajusta el interlineado si es necesario */
+    transform: translate(-1%, 80%);
+  }
+  .rounded-input {
+    --background: #ffffff;
+    --border-radius: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --border-color: #ffffff;
+    --border-width: 2px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+  
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 80vw; 
+    height: 7vh;
+    transform: translate(10%, 160%);
+    
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+  }
+  
+  .rounded-input input {
+    color: #000000; /* Color del texto */
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+  }
+  
+  /* Cambia el estilo del placeholder */
+  .rounded-input input::placeholder {
+    color: #000000; /* Color del placeholder */
+    font-weight: bold; /* Negrita en el placeholder */
+    font-size: 16px; /* Tamaño de la letra del placeholder */
+  }
+  
+
+.boton-personalizado {
+    --background: #3D98EC; /* Color de fondo personalizado */
+    --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 60vw; /* Para pantallas más grandes como tablets o PC */
+    height: 9vh;
+  
+  
+    box-sizing: border-box;
+   
+    transform: translate(32%, 250%);/* x,y */
+    font-weight: bold; /* negrita */
+   
+
+  }
+
+  .titulo-1-h2 {
+    font-size: 20px; /* Ajusta el tamaño según sea necesario */
+    font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+    color: #ffffff; /* Cambia el color del texto según sea necesario */
+    transform: translate(-2%, 2%); /* Centra la imagen en el medio */
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }

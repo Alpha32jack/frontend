@@ -1,0 +1,983 @@
+<ion-content class="font" [fullscreen]="true" style="padding: 0; position: relative;">
+    <button class="banck-button" (click)="goBack()">
+      <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+    </button>
+
+    <button class="banck-button_2" (click)="gohist()">
+      <ion-img class="banck" src="assets/Imagenes_camp/History.png"></ion-img>
+    </button>
+  
+
+    <ion-img class="foto" src="assets/Personaje/Photo.png"></ion-img>
+
+    <ion-img class="remini_letra" src="assets/Personaje/ARMOR_CLASS.png"></ion-img>
+
+    <ion-img class="Bloqueo" src="assets/Personaje/Rectangle-1.png"></ion-img>
+    <label class="Bloqueo-numero" >10</label>
+    
+    <ion-img class="Bloqueo-n" src="assets/Personaje/BLO-n.png"></ion-img>
+
+    
+    <ion-img class="esquivar" src="assets/Personaje/Polygon-1.png"></ion-img>
+    <label class="esquivar-numero" >10</label>
+
+    <ion-img class="esquivar-n " src="assets/Personaje/ESQUI-n.png"></ion-img>
+
+    <button class="vida" (click)="setOpen_2(true)">
+      <ion-img  src="assets/Personaje/HIT_POINTS.png"></ion-img>
+    </button>
+
+    <ion-modal [isOpen]="isModalOpen_2" >
+      <ng-template>  
+        <ion-content class="ion-padding">
+          <div class="div-modal">
+            <button class="button-edi ">
+              <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+            </button>
+            <ion-img class="expe" src="assets/Imagenes_camp/HIT_POINTS.png"></ion-img>
+            <div class="div-list-modal">
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">BASE </ion-col>
+                <ion-col size="2.3" push="0">20</ion-col>       
+              </ion-item>
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">DAÑO SUFRIDO </ion-col>
+                <ion-col size="2.3" push="0">29</ion-col>       
+              </ion-item>
+            </div>
+            <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen_2(false)">
+              <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+            </ion-button>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+    <button class="MANA"(click)="setOpen_3(true)">
+    <ion-img  src="assets/Personaje/MANA.png"></ion-img> 
+    </button>
+
+    <ion-modal [isOpen]="isModalOpen_3" >
+      <ng-template>  
+        <ion-content class="ion-padding">
+          <div class="div-modal">
+            <button class="button-edi ">
+              <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+            </button>
+            <ion-img class="expe" src="assets/Imagenes_camp/MANA.png"></ion-img>
+            <div class="div-list-modal">
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">MANA ACTUAL </ion-col>
+                <ion-col size="2.3" push="0">20</ion-col>       
+              </ion-item>
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">MANA TOTAL </ion-col>
+                <ion-col size="2.3" push="0">29</ion-col>       
+              </ion-item>
+            </div>
+            <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen_3(false)">
+              <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+            </ion-button>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+    <ion-progress-bar class="barra-vida" type="indeterminate" color="success"></ion-progress-bar>
+    <label class="vid">10/10</label>
+    <ion-progress-bar class="barra-mana" type="indeterminate" color="secondary"></ion-progress-bar>
+    <label class="man">10/10</label>
+
+    <button class="NIVEL" (click)="setOpen(true)">
+      <ion-img src="assets/Personaje/NIVEL.png"></ion-img> 
+    </button>
+
+    <ion-modal [isOpen]="isModalOpen" >
+      <ng-template>  
+        <ion-content class="ion-padding">
+          <div class="div-modal">
+            <button class="button-edi ">
+              <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+            </button>
+            <ion-img class="expe" src="assets/Imagenes_camp/Des_exp.png"></ion-img>
+            <div class="div-list-modal">
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">PUNTAJE ACTUAL (M) </ion-col>
+                <ion-col size="2.3" push="0">13</ion-col>       
+              </ion-item>
+              <ion-item class="lit_player-modal">
+                <ion-col size="7" push="0">PUNTOS TOTALES (M) </ion-col>
+                <ion-col size="2.3" push="0">500</ion-col>       
+              </ion-item>
+            </div>
+            <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen(false)">
+              <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+            </ion-button>
+          </div>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+    <ion-progress-bar class="barra-expe" type="indeterminate" color="warning"></ion-progress-bar>
+    <ion-img class="Exp" src="assets/Personaje/EXP.png"></ion-img>
+    <label class="ex">100/500</label>
+
+    
+    <ion-img class="lin" src="assets/Personaje/Line.png"></ion-img> 
+
+    <ion-img class="Est" src="assets/Personaje/Estadisticas.png"></ion-img> 
+
+    <button class="habi" (click)="habi()" >
+      <ion-img src="assets/Personaje/Habilidades.png"></ion-img> 
+    </button>
+
+    <button class="inv" (click)="inven()" >
+      <ion-img  src="assets/Personaje/Inventario.png"></ion-img>
+    </button>
+
+      <ion-grid class="stat-grid">
+          <ion-col>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_4(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-fuerza.png"></ion-img>
+                    <label class="fuerza-numer">11</label>
+                    <label class="bonus">+1</label>
+                  </button>
+
+                  <ion-modal [isOpen]="isModalOpen_4" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_Fuerza.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">12</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_4(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+              
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_5(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-destresa.png"></ion-img>
+                    <label class="fuerza-numero" >10</label>
+                    <label class="bonus">+1</label>
+                  </button>
+
+                  <ion-modal [isOpen]="isModalOpen_5" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_destreza.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">10</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_5(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_6(true)">
+                    <ion-img class="ite" src="assets/Personaje/stant-constitucion.png"></ion-img>
+                    <label class="fuerza-numero" >12</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  
+                  <ion-modal [isOpen]="isModalOpen_6" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_consti.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">13</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">12</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_6(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_7(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-inteligencia.png"></ion-img>
+                    <label class="fuerza-numero" >10</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_7" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_inte.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">10</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_7(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_8(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-sabiduria.png"></ion-img>
+                    <label class="fuerza-numero" >13</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_8" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_sabi.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">14</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">13</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_8(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_9(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-apariencia.png"></ion-img>
+                    <label class="fuerza-numero" >10</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_9" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_apari.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">10</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_9(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+              </ion-row> 
+          </ion-col>
+          <ion-col>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_10(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-estamina.png"></ion-img>
+                    <label class="fuerza-numero" >15</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_10" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_esta.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">16</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">15</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_10(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_11(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-balance.png"></ion-img>
+                    <label class="fuerza-numero" >10</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_11" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_bal.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">12</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_11(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_12(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-resistencia.png"></ion-img>
+                    <label class="fuerza-nume" >50</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_12" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_resis.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">51</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">50</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_12(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_13(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-conocimiento.png"></ion-img>
+                    <label class="fuerza-numero" >10</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_13" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_cono.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">11</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">10</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_13(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_14(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-voluntad.png"></ion-img>
+                    <label class="fuerza-nume" >30</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_14" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_vf.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">31</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">30</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_14(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_15(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-carisma.png"></ion-img>
+                    <label class="fuerza-nume" >20</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_15" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_caris.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">21</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">20</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_15(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+              </ion-row> 
+          </ion-col>
+          <ion-col>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_16(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-musculatura.png"></ion-img>
+                    <label class="fuerza-nume" >20</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_16" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_muscu.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">21</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">20</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_16(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_17(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-punteria.png"></ion-img>
+                    <label class="fuerza-nume" >25</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_17" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_pun.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">26</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">25</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_17(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_18(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-salud.png"></ion-img>
+                    <label class="fuerza-nume" >40</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_18" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_salud.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">41</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">40</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_18(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_19(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-logica.png"></ion-img>
+                    <label class="fuerza-nume" >45</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_19" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_log.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">46</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">45</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_19(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_20(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-intuicion.png"></ion-img>
+                    <label class="fuerza-nume" >50</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_20" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_intu.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">51</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">50</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_20(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+                <ion-col>
+                  <button class="lit_player" (click)="setOpen_21(true)">
+                    <ion-img class="ite" src="assets/Personaje/stat-verborrea.png"></ion-img>
+                    <label class="fuerza-nume" >55</label>
+                    <label class="bonus">+1</label>
+                  </button>
+                  <ion-modal [isOpen]="isModalOpen_21" class="ion-modal-2">
+                    <ng-template>  
+                      <ion-content class="ion-padding">
+                        <div class="div-modal-2">
+                          <button class="button-edi ">
+                            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+                          </button>
+                          <ion-img class="expe" src="assets/Personaje/Des_verbo.png"></ion-img>
+                          <div class="div-list-modal">
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTAJE TOTAL </ion-col>
+                              <ion-col size="2.3" push="0">56</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">PUNTOS BASE </ion-col>
+                              <ion-col size="2.5" push="0">55</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                              <ion-col size="2.5" push="0">1</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                            <ion-item class="lit_player-modal">
+                              <ion-col size="7" push="0">BONO POR EQUIPO </ion-col>
+                              <ion-col size="2.5" push="0">0</ion-col>       
+                            </ion-item>
+                          </div>
+                          <ion-button class="boton-personalizado-3" type="submit" shape="round" (click)="setOpen_21(false)">
+                            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+                          </ion-button>
+                        </div>
+                      </ion-content>
+                    </ng-template>
+                  </ion-modal>
+                </ion-col>
+              </ion-row> 
+          </ion-col>
+      </ion-grid>
+     
+
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="campa()">
+        <ion-img src="assets/Personaje/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons class="center">
+      <ion-button>
+        <ion-img src="assets/Personaje/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <ion-button (click)="Confg()">
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

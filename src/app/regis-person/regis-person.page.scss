@@ -1,0 +1,206 @@
+
+
+.banck-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+
+.banck {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: 40px;
+    object-fit: contain;
+}
+
+.imagen-fondo {
+    position: relative; /* Asegúrate de que esta imagen se mantenga en su posición normal */
+}
+
+.foto-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: relative;
+    top: -390px; /* Ajusta la posición superior */
+    left: 8px; /* Ajusta la posición a la izquierda */
+    z-index: 1; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+
+.foto {
+    width: 900px!important; /* Ajusta el tamaño de la imagen */
+    height: 230px;
+    object-fit: contain!important;
+}
+
+
+.div_form {
+
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-70%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%; /* Ajusta el tamaño del formulario */
+    z-index: 1; /* Asegura que esté por encima de la imagen */
+}
+
+.rounded-input {
+    --background: #ffffff;
+    --border-radius: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --border-color: #ffffff;
+    --border-width: 2px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 69vw; 
+    height: 7vh;
+    transform: translate(25%, -150%);
+    
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+
+}
+
+
+
+/* Estilos para el segundo input */
+.rounded-input-2 {
+    --background: #ffffff; /* Fondo blanco */
+    --border-radius: 30px; /* Bordes redondeados */
+    --padding-start: 20px; /* Espaciado interno */
+    --padding-end: 20px;
+    --border-color: #ffffff; /* Borde blanco o transparente */
+    --border-width: 2px; /* Ajustar si se desea más grosor */
+    text-align: center; /* Centrar el texto */
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 69vw; 
+    height: 7vh;
+    transform: translate(25%, -120%);
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+}
+
+
+
+.rounded-input-3 {
+    --background: #ffffff;
+    --border-radius: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --border-color: #ffffff;
+    --border-width: 2px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 29vw; 
+    height: 7vh;
+    transform: translate(-10%, -90%);
+    
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+}
+
+
+/* Estilos para el segundo input */
+.rounded-input-4 {
+    --background: #ffffff; /* Fondo blanco */
+    --border-radius: 30px; /* Bordes redondeados */
+    --padding-start: 20px; /* Espaciado interno */
+    --padding-end: 20px;
+    --border-color: #ffffff; /* Borde blanco o transparente */
+    --border-width: 2px; /* Ajustar si se desea más grosor */
+    text-align: center; /* Centrar el texto */
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 29vw; 
+    height: 7vh;
+    transform: translate(120%, -190%);
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+}
+
+.rounded-input-5 {
+    --background: #ffffff;
+    --border-radius: 30px;
+    --padding-start: 20px;
+    --padding-end: 20px;
+    --border-color: #ffffff;
+    --border-width: 2px;
+    text-align: center;
+    color: #000000;
+    font-weight: bold;
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 29vw; 
+    height: 7vh;
+    transform: translate(-10%, -160%);
+    
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+}
+
+
+/* Estilos para el segundo input */
+.rounded-input-6 {
+    --background: #ffffff; /* Fondo blanco */
+    --border-radius: 30px; /* Bordes redondeados */
+    --padding-start: 20px; /* Espaciado interno */
+    --padding-end: 20px;
+    --border-color: #ffffff; /* Borde blanco o transparente */
+    --border-width: 2px; /* Ajustar si se desea más grosor */
+    text-align: center; /* Centrar el texto */
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Hacer el texto más grueso */
+
+    box-shadow: 0px 4px 6px rgb(0, 0, 0);
+    width: 29vw; 
+    height: 7vh;
+    transform: translate(120%, -260%);
+    font-size: 19px;  /* Ajusta el tamaño de la letra aquí */
+    
+}
+
+
+.boton-personalizado {
+    --background: #3D98EC; /* Color de fondo personalizado */
+    --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 89vw; /* Para pantallas más grandes como tablets o PC */
+    height: 9vh;
+  
+    box-sizing: border-box;
+   
+    transform: translate(20%, 0%);/* x,y */
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 240px; /* Ajusta la posición superior */
+    font-weight: bold; /* negrita */
+   
+
+  }
+
+  .titulo-1-h2 {
+    font-size: 20px; /* Ajusta el tamaño según sea necesario */
+    font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+    color: #ffffff; /* Cambia el color del texto según sea necesario */
+    transform: translate(-2%, 2%); /* Centra la imagen en el medio */
+  }
+
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  

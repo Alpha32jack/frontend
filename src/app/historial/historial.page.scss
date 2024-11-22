@@ -1,0 +1,199 @@
+.banck-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+.banck-button_2 {
+  background: none;
+  border: none;
+  padding: 0;
+  position: absolute; /* Posiciona el botón de forma absoluta */
+  top: 20px; /* Ajusta la posición superior */
+  right: 40px; /* Ajusta la posición a la izquierda */
+  z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+
+
+.imagen-fondo {
+    position: relative; /* Asegúrate de que esta imagen se mantenga en su posición normal */
+}
+.remini_letra {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 12%; /* Ajusta la posición vertical según sea necesario */
+    left: 15%; /* Ajusta la posición horizontal según sea necesario */
+    width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 69vw; /* Limita el tamaño máximo */
+}
+
+  .lupa {
+    --background: #5e5e5e90;  /* Hace el fondo del ion-searchbar transparente */
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 60vw; /* Ajusta la posición superior */
+    left: 7vh; /* Ajusta la posición a la izquierda */
+    width: 280px;
+    color: #FFFFFF;
+    font-weight: bold;
+
+    /* Estilo para el texto del placeholder */
+    .searchbar-input {
+        color: white; /* Cambia el color del texto */
+        font-weight: bold; /* Texto en negrita */
+        
+    }
+
+    /* Estilo para la lupa (el icono de búsqueda) */
+    ion-icon {
+        color: white; /* Cambia el color del icono */
+        font-weight: bold; /* Texto en negrita */
+
+    }
+}
+
+  .titulo-3-h2 {
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+  .remember-session-container {
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 46vw; /* Ajusta la posición superior */
+    left: 15vh; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+  }
+
+  .titulo-4-h2 {
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    width: 700px;
+    white-space: pre-wrap;
+    top: 13vw; /* Ajusta la posición superior */
+    left: -5vh; /* Ajusta la posición a la izquierda */
+
+    font-size: 25px;
+    color: #ffffff;
+    font-weight: bold;
+}
+  .div-list{
+  position: absolute;
+  top: 35vh;
+  left: 200px;
+  transform: translateX(-50%);
+  width: 350px;
+  height: 450px;
+  background:transparent;
+  overflow-y: scroll;
+
+}
+
+ion-list {
+  background:transparent; // <-- Este es el fondo negro semitransparente
+  ion-item {
+    --background: transparent;  // Sobrescribe el fondo predeterminado
+    --ion-item-background: transparent;  // Asegura que el fondo sea transparente
+    background-color: transparent !important;  // Fuerza el fondo transparente
+  }
+    .lit_player {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      background: transparent; // <-- Este es el fondo negro semitransparente
+      border-radius: 10px;
+      margin-bottom: 10px;
+    
+    
+
+    ion-avatar {
+      width: 50px;
+      height: 50px;
+      img {
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .label-1 {
+      text-align: center;
+      color: #F0CA73;
+      font-weight: bold;
+      
+  
+      &:first-child {
+        font-size: 18px;
+      }
+  
+      &:last-child {
+        font-size: 14px;
+        color: #cccccc;
+      }
+    }
+
+    .label-2 {
+      color: #ffffff;
+      font-weight: bold;
+      text-align: center;
+
+      
+  
+      &:first-child {
+        font-size: 18px;
+      }
+  
+      &:last-child {
+        font-size: 14px;
+        color: #cccccc;
+      }
+    }
+
+    .delete-button {
+      transform: translateX(-10%);
+      background: none;
+      border: none;
+      color: #ffffff;
+      cursor: pointer;       
+    }
+    .X{
+        width: 100%;
+        height: auto;
+        max-width: 100%; /* Para evitar que la imagen sea más grande que el contenedor */
+    }
+  }
+}
+
+
+ion-infinite-scroll {
+  margin-top: 10px;
+}
+
+.boton-personalizado {
+  --background: #3D98EC; /* Color de fondo personalizado */
+  --color: #FFFFFF; /* Color del texto (cámbialo según sea necesario) */
+  border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+  
+  width: 60vw; /* Para pantallas más grandes como tablets o PC */
+  height: 9vh;
+
+  box-sizing: border-box;
+ 
+  transform: translate(35%, 200%);/* x,y */
+  font-weight: bold; /* negrita */
+ 
+
+}
+.titulo-1-h2 {
+  font-size: 20px; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+  color: #ffffff; /* Cambia el color del texto según sea necesario */
+  transform: translate(-2%, 2%); /* Centra la imagen en el medio */
+}
+
+.center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

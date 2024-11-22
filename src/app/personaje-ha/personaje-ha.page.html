@@ -1,0 +1,273 @@
+<ion-content class="font" [fullscreen]="true" style="padding: 0; position: relative;">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+
+  <button class="banck-button_2" (click)="gohist()">
+    <ion-img class="banck" src="assets/Imagenes_camp/History.png"></ion-img>
+  </button>
+
+  <ion-img class="foto" src="assets/Personaje/Photo.png"></ion-img>
+
+  <ion-img class="remini_letra" src="assets/Personaje/ARMOR_CLASS.png"></ion-img>
+
+  <ion-img class="Bloqueo" src="assets/Personaje/Rectangle-1.png"></ion-img>
+  <label class="Bloqueo-numero" >10</label>
+  
+  <ion-img class="Bloqueo-n" src="assets/Personaje/BLO-n.png"></ion-img>
+
+  
+  <ion-img class="esquivar" src="assets/Personaje/Polygon-1.png"></ion-img>
+  <label class="esquivar-numero" >10</label>
+
+  <ion-img class="esquivar-n " src="assets/Personaje/ESQUI-n.png"></ion-img>
+
+  <button class="vida" (click)="setOpen_2(true)">
+    <ion-img  src="assets/Personaje/HIT_POINTS.png"></ion-img>
+  </button>
+
+  <ion-modal [isOpen]="isModalOpen_2" >
+    <ng-template>  
+      <ion-content class="ion-padding">
+        <div class="div-modal">
+          <button class="button-edi ">
+            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+          </button>
+          <ion-img class="expe" src="assets/Imagenes_camp/Des_exp.png"></ion-img>
+          <div class="div-list-modal">
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">BASE </ion-col>
+              <ion-col size="2.3" push="0">20</ion-col>       
+            </ion-item>
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">DAÑO SUFRIDO </ion-col>
+              <ion-col size="2.3" push="0">29</ion-col>       
+            </ion-item>
+          </div>
+          <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen_2(false)">
+            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+          </ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+
+          
+
+  <button class="MANA">
+  <ion-img  src="assets/Personaje/MANA.png"(click)="setOpen_3(true)"></ion-img> 
+  </button>
+
+  <ion-modal [isOpen]="isModalOpen_3" >
+    <ng-template>  
+      <ion-content class="ion-padding">
+        <div class="div-modal">
+          <button class="button-edi ">
+            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+          </button>
+          <ion-img class="expe" src="assets/Imagenes_camp/Des_exp.png"></ion-img>
+          <div class="div-list-modal">
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">BASE </ion-col>
+              <ion-col size="2.3" push="0">20</ion-col>       
+            </ion-item>
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">DAÑO SUFRIDO </ion-col>
+              <ion-col size="2.3" push="0">29</ion-col>       
+            </ion-item>
+          </div>
+          <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen_3(false)">
+            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+          </ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-progress-bar class="barra-vida" type="indeterminate" color="success"></ion-progress-bar>
+  <label class="vid">10/10</label>
+  <ion-progress-bar class="barra-mana" type="indeterminate" color="secondary"></ion-progress-bar>
+  <label class="man">10/10</label>
+
+  <button class="NIVEL" (click)="setOpen(true)">
+    <ion-img src="assets/Personaje/NIVEL.png"></ion-img> 
+  </button>
+
+  <ion-modal [isOpen]="isModalOpen" >
+    <ng-template>  
+      <ion-content class="ion-padding">
+        <div class="div-modal">
+          <button class="button-edi ">
+            <ion-img class="edi" src="assets/Imagenes_camp/Edit.png"></ion-img>
+          </button>
+          <ion-img class="expe" src="assets/Imagenes_camp/Des_exp.png"></ion-img>
+          <div class="div-list-modal">
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">PUNTAJE ACTUAL (M) </ion-col>
+              <ion-col size="2.3" push="0">13</ion-col>       
+            </ion-item>
+            <ion-item class="lit_player-modal">
+              <ion-col size="7" push="0">PUNTOS TOTALES (M) </ion-col>
+              <ion-col size="2.3" push="0">500</ion-col>       
+            </ion-item>
+          </div>
+          <ion-button class="boton-personalizado-2" type="submit" shape="round" (click)="setOpen(false)">
+            <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+          </ion-button>
+        </div>
+      </ion-content>
+    </ng-template>
+  </ion-modal>
+
+  <ion-progress-bar class="barra-expe" type="indeterminate" color="warning"></ion-progress-bar>
+  <ion-img class="Exp" src="assets/Personaje/EXP.png"></ion-img>
+  <label class="ex">100/500</label>
+
+  
+  <ion-img class="lin" src="assets/Personaje/Line.png"></ion-img> 
+
+  <ion-img class="Est" (click)="Esta()" src="assets/Personaje/Estadisticas-2.png"></ion-img> 
+
+  <button class="habi">
+    <ion-img src="assets/Personaje/Habilidades-2.png"></ion-img> 
+  </button>
+
+  <button class="inv" (click)="inven()" >
+    <ion-img  src="assets/Personaje/Inventario.png"></ion-img>
+  </button>
+
+  <ion-grid class="stat-grid">
+      <div class="div-list">
+        <ion-item class="lit_player">
+          <ion-col size="5" push="0">NOMBRE </ion-col>
+          <ion-col size="2.3" push="0">MOD</ion-col>
+          <ion-col size="2.5" push="0">MANA </ion-col> 
+          <ion-col pull-lg="3">BONO</ion-col>        
+        </ion-item>
+      </div>
+      <div class="div-list-2">
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">CURACION </ion-col>
+          <ion-col size="2.3" push="0">INT</ion-col>
+          <ion-col size="2.5" push="0">-2 </ion-col> 
+          <ion-col pull-lg="3">+2</ion-col>        
+        </ion-item>
+        
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">SIGILO</ion-col>
+          <ion-col size="2.3" push="0">DES</ion-col>
+          <ion-col size="2.5" push="0">0 </ion-col> 
+          <ion-col pull-lg="3">0</ion-col>        
+        </ion-item>
+
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">EMBESTIDA</ion-col>
+          <ion-col size="2.3" push="0">FUR</ion-col>
+          <ion-col size="2.5" push="0">0 </ion-col> 
+          <ion-col pull-lg="3">+1</ion-col>        
+        </ion-item>
+
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">AMPUÑALADA</ion-col>
+          <ion-col size="2.3" push="0">FUR</ion-col>
+          <ion-col size="2.5" push="0">0 </ion-col> 
+          <ion-col pull-lg="3">+1</ion-col>        
+        </ion-item>
+
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">BOLA DE FUEGO</ion-col>
+          <ion-col size="2.3" push="0">INT</ion-col>
+          <ion-col size="2.5" push="0">-2</ion-col> 
+          <ion-col pull-lg="3">+2</ion-col>        
+        </ion-item>
+
+        <ion-item class="lit_player-2">
+          <ion-col size="5" push="0">SEDUCCION</ion-col>
+          <ion-col size="2.3" push="0">APA</ion-col>
+          <ion-col size="2.5" push="0">0 </ion-col> 
+          <ion-col pull-lg="3">0</ion-col>        
+        </ion-item>
+      
+
+      <ion-item class="lit_player-2">
+        <ion-col size="5" push="0">MEDITACIÓN</ion-col>
+        <ion-col size="2.3" push="0">SAB</ion-col>
+        <ion-col size="2.5" push="0">0 </ion-col> 
+        <ion-col pull-lg="3">0</ion-col>        
+      </ion-item>
+    </div>
+    <form action="">
+      <button class="Add"  (click)="setOpen_4(true)">
+        <ion-img  src="assets/Personaje/Add_Item.png"></ion-img>
+      </button>
+      <ion-modal [isOpen]="isModalOpen_4" class="ion-modal-2">
+        <ng-template>  
+          <ion-content class="ion-padding">
+            <div class="div-modal-2">
+              <ion-img class="expe" src="assets/Personaje/Nu_ha.png"></ion-img>
+              <div class="div-list-modal-2">
+                <ion-item class="lit_player-modal">
+                  <ion-col size="4" push="0">NOMBRE </ion-col>
+                  <ion-col size="2.3" push="0"><ion-input></ion-input></ion-col>       
+                </ion-item>
+                <ion-item class="lit_player-modal">
+                  <ion-col size="7" push="0">BONIFICADOR </ion-col>
+                  <ion-col size="2.5" push="0"><ion-input></ion-input></ion-col>       
+                </ion-item>
+                <ion-item class="lit_player-modal">
+                  <ion-col size="7" push="0">BONO POR COMPETENCIA </ion-col>
+                  <ion-col size="2.5" push="0"><ion-input></ion-input></ion-col>       
+                </ion-item>
+                <ion-item class="lit_player-modal">
+                  <ion-col size="7" push="0">COSTE DE MANA </ion-col>
+                  <ion-col size="2.5" push="0"><ion-input></ion-input></ion-col>       
+                </ion-item>
+                <ion-item class="lit_player-modal">
+                  <ion-col size="7" push="0">MODERADOR </ion-col>
+                  <ion-col size="2.5" push="0"><ion-input></ion-input></ion-col>       
+                </ion-item>
+                <ion-item class="lit_player-modal">
+                  <ion-col size="4" push="0">DESCRIPCION:<ion-input 
+                    [(ngModel)]="descripcion"
+                    type="text"
+                    class="descripcion-input">
+                  </ion-input>
+                </ion-col>
+                </ion-item>
+              </div>
+              <ion-button class="boton-personalizado-4" type="submit" shape="round" (click)="setOpen_4(false)">
+                <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+              </ion-button>
+            </div>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </form>
+  </ion-grid>
+   
+
+
+</ion-content>
+
+<ion-footer>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-button (click)="campa()">
+      <ion-img src="assets/Personaje/Campaing_Icon.png"></ion-img>
+    </ion-button>
+  </ion-buttons>
+  
+  <ion-buttons class="center">
+    <ion-button>
+      <ion-img src="assets/Personaje/Chacter_Icon.png"></ion-img>
+    </ion-button>
+  </ion-buttons>
+  
+  <ion-buttons slot="end">
+    <ion-button (click)="Confg()">
+      <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+    </ion-button>
+  </ion-buttons>
+</ion-toolbar>
+</ion-footer>

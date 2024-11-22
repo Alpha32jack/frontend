@@ -1,0 +1,7 @@
+{
+  "name": "reminicencia",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

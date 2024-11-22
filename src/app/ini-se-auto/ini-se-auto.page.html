@@ -1,0 +1,35 @@
+<ion-content [fullscreen]="true" style="padding: 0; position: relative;">
+  <ion-img class="imagen-fondo" src="assets/Imagenes_ini_se/Portada.gif"></ion-img>
+  <ion-img class="remini_letra" src="assets/Imagenes_ini_se/REMINISCENCIA.png"></ion-img>
+
+  <ion-button class="boton-personalizado" shape="round"(click)="goSi()"> 
+    <ion-label class="titulo-2-h2" slot="start">CONTINUAR CON USUARIO </ion-label>
+    <ion-img class="simbolo-1" src="assets/Imagenes_ini_se/simbolo-1.png"></ion-img></ion-button>
+
+  <div class="line-container">
+    <div class="line long"></div>
+    <div class="line short"></div>
+    <div class="line long"></div>
+  </div>
+
+  <ion-button class="boton-personalizado-2" shape="round"> 
+  <ion-label class="titulo-2-h2" slot="start">CONTINUAR CON GOOGLE </ion-label>
+  <ion-img class="simbolo-2" src="assets/Imagenes_ini_se/google.png"></ion-img></ion-button>
+
+  <ion-button class="boton-personalizado-2" shape="round">
+  <ion-label class="titulo-2-h2" slot="start">CONTINUAR CON TWITCH </ion-label>
+  <ion-img class="simbolo-2" src="assets/Imagenes_ini_se/twich.png"></ion-img></ion-button>
+
+  <ion-button class="boton-personalizado-2" shape="round">
+  <ion-label class="titulo-2-h2" slot="start">CONTINUAR CON EMAIL </ion-label>
+  <ion-img class="simbolo-3" src="assets/Imagenes_ini_se/email.png"></ion-img></ion-button>
+
+  <ion-footer>
+    <ion-label class="titulo-3-h2">¿Eres nuevo? 
+      <a (click)="regis()" style="color: #3880ff; text-decoration: underline;">
+        Crea una cuenta
+      </a>
+    </ion-label>
+  </ion-footer>
+
+</ion-content>

@@ -1,0 +1,30 @@
+<ion-content [fullscreen]="true" style="padding: 0; position: relative;">
+
+  <ion-img class="imagen-fondo" src="assets/Imagenes_person/Fondo.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/Imagenes_person/Empieza.png"></ion-img>
+
+  <ion-img class="remini_letra_2" src="assets/Imagenes_person/Crea.png"></ion-img>
+
+  <ion-button class="boton-personalizado" shape="round" (click)="CamCont()">
+    <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label></ion-button>
+
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start"  type="submit" (click)="campa()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_person/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="center"  type="submit">
+      <ion-button>
+        <ion-img src="assets/Imagenes_person/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end"  type="submit" (click)="Confg()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

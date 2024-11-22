@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Registro de Estudiante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form (ngSubmit)="onSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" [(ngModel)]="student.name" name="name" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" [(ngModel)]="student.email" name="email" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Teléfono</ion-label>
+      <ion-input type="text" [(ngModel)]="student.phone" name="phone" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Idioma</ion-label>
+      <ion-select [(ngModel)]="student.language" name="language" required>
+        <ion-select-option value="master">Master</ion-select-option>
+        <ion-select-option value="player">Player</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button expand="full" type="submit">Registrar</ion-button>
+  </form>
+
+  <ion-toast
+    *ngIf="toastMessage"
+    [message]="toastMessage"
+    duration="2000"
+    (didDismiss)="toastMessage = ''">
+  </ion-toast>
+</ion-content>

@@ -1,0 +1,34 @@
+<ion-content [fullscreen]="true">
+  <form [formGroup]="studentForm" (ngSubmit)="registerUser()">
+    <button class="banck-button" (click)="goBack()">
+      <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+    </button>
+    <ion-img class="imagen-fondo" src="assets/imagenes_regis/Fondo-regis.png"></ion-img>
+    <ion-img class="remini_letra" src="assets/imagenes_regis/RESGISTRATE.png"></ion-img>
+
+    <button class="foto-button" (click)="abrirSelector()">
+      <img *ngIf="!imagenUrl" class="foto" src="assets/imagenes_regis/Foto.png" />
+      <img *ngIf="imagenUrl" [src]="imagenUrl" class="foto" />
+    </button>
+
+    <input #fileInput type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;" />
+
+    <ion-item>
+      <ion-label position="floating">Nombre de Usuario</ion-label>
+      <ion-input type="text" formControlName="name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Correo Electrónico</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="tel" formControlName="password"></ion-input>
+    </ion-item>
+    <ion-item>
+    </ion-item>
+    <ion-button class="boton-personalizado" type="submit" [disabled]="studentForm.invalid">
+      <ion-label class="titulo-1-h2" slot="start">Registrarse</ion-label>
+    </ion-button>
+  </form>
+</ion-content>

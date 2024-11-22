@@ -1,0 +1,135 @@
+/* Parte de imagen de la portada*/
+img, ion-img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Para evitar que la imagen sea más grande que el contenedor */
+}
+
+.imagen-fondo {
+  position: relative; /* Asegúrate de que esta imagen se mantenga en su posición normal */
+}
+
+.remini_letra {
+  position: absolute; /* Posiciona la imagen de forma absoluta */
+  top: 45%; /* Ajusta la posición vertical según sea necesario */
+  left: 50%; /* Ajusta la posición horizontal según sea necesario */
+  transform: translate(-50%, -50%); /* Centra la imagen en el medio */
+  width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+  max-width: 400px; /* Limita el tamaño máximo */
+}
+
+@media (max-width: 767px) {
+  img, ion-img {
+      width: 430px; /* Para pantallas más grandes como tablets o PC */
+      height: auto;
+  }
+}
+  .boton-personalizado {
+    --background: #ffffff; /* Color de fondo personalizado */
+    --color: #000; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 89vw; /* Para pantallas más grandes como tablets o PC */
+    height: 9vh;
+  
+    transform: translate(4%, 53%);
+    font-weight: bold; /* negrita */
+  
+
+  }
+  .boton-personalizado-2 {
+    --background: #FEFEFE; /* Color de fondo personalizado */
+    --color: #000; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    
+    width: 89vw; 
+    height: 9vh;
+    box-sizing: border-box;
+   
+    transform: translate(4%, -48%);
+    font-weight: bold; /* negrita */
+   
+    
+  }
+  .simbolo-1 {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 45%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-270%, -46%); /* 75 Centra la imagen en el medio */
+    max-width: 58px; /* Limita el tamaño máximo */
+  }
+  .simbolo-2 {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 45%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-193%, -45%); /* 75 Centra la imagen en el medio */
+    max-width: 84px; /* Limita el tamaño máximo */
+  }
+  
+  .simbolo-3 {
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 45%; /* Ajusta la posición vertical según sea necesario */
+    left: 50%; /* Ajusta la posición horizontal según sea necesario */
+    transform: translate(-265%, -45%); /* 75 Centra la imagen en el medio */
+    max-width: 55px; /* Limita el tamaño máximo */
+  }
+  /*Parte lineas */
+.line-container {
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #00000000; /* Fondo negro como en tu imagen */
+  height: 110px; /* Altura del contenedor */
+  transform: translate(0%, 1%); /* Centra la imagen en el medio */
+}
+
+.line {
+  
+  background-color: white; /* Color de las líneas */
+  height: 5px; /* Altura de las líneas */
+  border-radius: 50px; /* Bordes redondeados */
+
+
+}
+
+.long {
+  
+  width: 100px; /* Longitud de la línea larga */
+}
+
+.short {
+  
+  width: 30px; /* Longitud de la línea corta */
+}
+
+
+.line:not(:last-child) {
+  margin-right: -80px; /* Espacio entre las líneas si necesitas uno */
+}
+
+/* Parte del boton*/
+
+
+.titulo-2-h2 {
+  font-size: 16px; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+  color: #000000; /* Cambia el color del texto según sea necesario */
+  transform: translate(8%, 2%); /* Centra la imagen en el medio */
+}
+
+
+.titulo-3-h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px; /* Ajusta el tamaño según sea necesario */
+  font-weight: bold; /* Puedes cambiar esto si deseas un peso diferente */
+  color: #ffffff; /* Cambia el color del texto según sea necesario */
+}
+
+
+
+
+
+

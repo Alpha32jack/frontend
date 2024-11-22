@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="true">
+
+  <!-- Botón de regreso -->
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+
+  <!-- Botón de editar -->
+  <button class="banck-button_2" (click)="goEdit()">
+    <ion-img class="banck" src="assets/Imagenes_camp/Edit.png"></ion-img>
+  </button>
+
+  <!-- Imagen de fondo -->
+  <ion-img class="imagen-fondo" src="assets/Imagenes_camp/Fondo.png"></ion-img>
+  
+  <!-- Nombre de la campaña -->
+  <ion-img class="remini_letra" src="assets/Imagenes_camp/Nombre_Campaña.png"></ion-img>
+
+  <!-- Contenedor para ID y nombre del master -->
+  <div class="remember-session-container">
+    <ion-label class="titulo-3-h2">ID:</ion-label>
+    <ion-label class="titulo-4-h2">Nombre del master</ion-label>
+  </div>
+  
+
+ <div class="div-list">
+  <ion-list>
+    <ion-item *ngFor="let item of items; let index" class="lit_player">
+      <ion-avatar slot="start">
+        <img [src]="'https://picsum.photos/80/80?random=' + index" alt="avatar" />
+      </ion-avatar>
+      <ion-label class="label-1">
+        {{ index + 1 }}
+      <ion-label class="label-2">ID: ######</ion-label>
+      </ion-label>
+      <button class="delete-button">
+        <ion-img class="X" src="assets/Imagenes_camp/X.png"></ion-img>
+      </button>
+    </ion-item>
+  </ion-list>
+</div>
+  <!-- Botón personalizado para iniciar sesión -->
+  <ion-button class="boton-personalizado" type="submit" (click)="aca_part()" shape="round">
+    <ion-label class="titulo-1-h2" slot="start">Terminar partida</ion-label>
+  </ion-button>
+
+</ion-content>
+
+<!-- Footer con iconos -->
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" type="submit">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons class="center" type="submit" (click)="pers()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end" type="submit" (click)="config()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>
+

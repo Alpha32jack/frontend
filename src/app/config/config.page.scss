@@ -1,0 +1,80 @@
+
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #000;
+    color: #fff;
+  }
+  
+
+  .user-avatar {
+    width: 200px;
+    height: 200px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    font-weight: bold; /* negrita */
+  }
+  
+  ion-button {
+    margin-bottom: 10px;
+  }
+  .boton-personalizado-2 {
+    --color: #ffffff; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    font-size: 20px;
+    width: 59vw; 
+    height: 9vh;
+    box-sizing: border-box;
+   
+    transform: translate(4%, -18%);
+    font-weight: bold; /* negrita */
+   
+   
+  }
+  .boton-personalizado-3 {
+    --background:#ff0000;
+    --color: #ffffff; /* Color del texto (cámbialo según sea necesario) */
+    border-radius: 50px; /* Opcional: Puedes ajustar el estilo del botón */
+    font-size: 20px;
+    width: 59vw; 
+    height: 9vh;
+    box-sizing: border-box;
+   
+    transform: translate(4%, -18%);
+    font-weight: bold; /* negrita */
+   
+    
+  }
+  .boton-personalizado-3:hover{
+    --background:#7f0b0b;
+  }
+  .center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  ion-footer {
+    ion-toolbar {
+      --background: #000;
+      --color: #fff;
+    }
+  
+    ion-button {
+      --color: #fff;
+    }
+  }

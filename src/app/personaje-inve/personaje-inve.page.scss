@@ -1,0 +1,271 @@
+.banck-button {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 20px; /* Ajusta la posición superior */
+    left: 20px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+.banck-button_2 {
+    background: none;
+    border: none;
+    padding: 0;
+    position: absolute; /* Posiciona el botón de forma absoluta */
+    top: 17px; /* Ajusta la posición superior */
+    right: 40px; /* Ajusta la posición a la izquierda */
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+  }
+.espada{
+    position: absolute; 
+    background: transparent;
+    top: 8%; 
+    left: 4%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+.daga{
+    position: absolute; 
+    background: transparent;
+    top: 16%; 
+    left: 4%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+
+.collar{
+    position: absolute; 
+    background: transparent;
+    top: 24%; 
+    left: 4%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+.anillo{
+    position: absolute; 
+    background: transparent;
+    top: 32.3%; 
+    left: 4%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+
+.casco{
+    position: absolute; 
+    background: transparent;
+    top: 6%; 
+    left: 40%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+
+.mani{
+    position: absolute; 
+    background: transparent;
+    top: 11%; 
+    left: 24%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+
+  .mani-2{
+    position: absolute; 
+    background: transparent;
+    top: 11%; 
+    left: 56%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+
+  .tora{
+    position: absolute; 
+    background: transparent;
+    top: 16%; 
+    left: 40%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .man-d{
+    position: absolute; 
+    background: transparent;
+    top: 21%; 
+    left: 24%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .man-i{
+    position: absolute; 
+    background: transparent;
+    top: 21%; 
+    left: 56%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .panta{
+    position: absolute; 
+    background: transparent;
+    top: 26.2%; 
+    left: 40%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .bot{
+    position: absolute; 
+    background: transparent;
+    top: 34.7%; 
+    left: 40%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .escu{
+    position: absolute; 
+    background: transparent;
+    top: 8%; 
+    left: 78%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .bol{
+    position: absolute; 
+    background: transparent;
+    top: 16%; 
+    left: 78%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .collar-2{
+    position: absolute; 
+    background: transparent;
+    top: 24%; 
+    left: 78%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .anillo-2{
+    position: absolute; 
+    background: transparent;
+    top: 32.3%; 
+    left: 78%; 
+    z-index: 10; 
+    width: 20%; 
+    max-width: 390px; 
+  }
+  .lin{
+    position: absolute; /* Posiciona la imagen de forma absoluta */
+    top: 46.6%; /* Ajusta la posición vertical según sea necesario */
+    left: 3%; /* Ajusta la posición horizontal según sea necesario */
+    z-index: 10; 
+    width: 100%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 390px; /* Limita el tamaño máximo */
+}
+
+.stat-grid{
+    background-color: #2D2D2D;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    position: relative;
+    top: 40.4%;
+}
+.stat-grid ion-col{
+    width: 30rem;
+}
+.Est{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 48%; /* Ajusta la posición vertical según sea necesario */
+    left: 3%; /* Ajusta la posición horizontal según sea necesario */
+
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.habi{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 43%; /* Ajusta la posición vertical según sea necesario */
+    left: 36%; /* Ajusta la posición horizontal según sea necesario */
+    background: transparent;
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+.inv{
+    position: relative; /* Posiciona la imagen de forma absoluta */
+    top: 43%; /* Ajusta la posición vertical según sea necesario */
+    left: 40%; /* Ajusta la posición horizontal según sea necesario */
+
+    z-index: 10; /* Asegúrate de que el botón esté por encima de otros elementos */
+    width: 28%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+}
+
+.lit_player {
+    background: transparent;
+}
+.center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .div-list{
+    position: absolute;
+    top: 3vh;
+    left: 200px;
+    transform: translateX(-49%);
+    width: 390px;
+    height: 250px;
+    overflow-y: scroll;
+  
+  }
+
+.lit_player{
+    --background: #636363;
+    font-family: "Hexen";
+    font-size: 20px;
+  }
+  .lit_player-2{
+    font-family: "Hexen";
+    font-size: 20px;
+  }
+
+  .div-list-2{
+    position: absolute;
+    top: 8.5vh;
+    left: 200px;
+    transform: translateX(-49%);
+    width: 390px;
+    height: 240px;
+    overflow-y: scroll;
+  
+  }
+  .Add{
+    background: transparent;
+    position: absolute;
+    top: 38.7vh;
+    left: 130px;
+    width: 38%; /* Ajusta el tamaño de la imagen superpuesta */
+    max-width: 380px; /* Limita el tamaño máximo */
+  }
+  .peso{
+    font-size:20px ;
+    font-family: "Hexen";
+    position: absolute;
+    top: 35.7vh;
+    left: 260px;
+  }

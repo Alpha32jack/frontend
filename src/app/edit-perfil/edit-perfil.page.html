@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+  <ion-img class="imagen-fondo" src="assets/Imagenes_camp/Fondo.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/Personaje/Editar-perfil.png"></ion-img>
+  
+  <!-- Envolvemos el contenido del form en un div -->
+  <div>
+    <button class="foto-button" (click)="abrirSelector()">
+      <img *ngIf="!imagenUrl" class="foto" src="assets/imagenes_regis/Foto.png" />
+      <img *ngIf="imagenUrl" [src]="imagenUrl" class="foto" />
+    </button>
+
+    <!-- Input de archivo oculto -->
+    <input #fileInput type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;"/>
+
+    <form>
+      <ion-input [(ngModel)]="User" name="user" class="rounded-input" type="text" placeholder="Nombre de Usuario"></ion-input>
+      <ion-input [(ngModel)]="Email" name="email" class="rounded-input-3" type="email" placeholder="Correo Electrónica"></ion-input>
+      
+      <ion-button class="boton-personalizado" type="submit" shape="round" routerLink="/part-onl">
+        <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start" (click)="campa()">
+      <ion-button>
+        <ion-img src="assets/Personaje/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="center" (click)="pers()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end" (click)="Confg()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

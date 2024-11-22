@@ -1,0 +1,55 @@
+<ion-content [fullscreen]="true">
+  <div class="main-container">
+    <!-- Botón de regreso -->
+    <button class="banck-button" (click)="goBack()">
+      <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+    </button>
+
+    <!-- Imagen de fondo -->
+    <ion-img class="imagen-fondo" src="assets/Imagenes_person/Fondo.png"></ion-img>
+
+    <!-- Selector de foto -->
+    <button class="foto-button" (click)="abrirSelector()">
+      <img *ngIf="!imagenUrl" class="foto" src="assets/Imagenes_person/Photo.png" />
+      <img *ngIf="imagenUrl" [src]="imagenUrl" class="foto" />
+    </button>
+
+    <input #fileInput type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;"/>
+
+    <form class="div_form">
+      <!-- Campos de entrada -->
+      <ion-input [(ngModel)]="User" name="user" class="rounded-input" type="text" placeholder="Nombre del Personaje"></ion-input>
+      <ion-input [(ngModel)]="ContraUser" name="contraUser" class="rounded-input-2" type="password" placeholder="Apodo del Personaje"></ion-input>
+      <ion-input [(ngModel)]="Email" name="email" class="rounded-input-3" type="email" placeholder="Edad"></ion-input>
+      <ion-input [(ngModel)]="ContraUserConfir" name="contraUserConfir" class="rounded-input-4" type="password" placeholder="Nivel"></ion-input>
+      <ion-input [(ngModel)]="Email" name="email2" class="rounded-input-5" type="email" placeholder="Peso"></ion-input>
+      <ion-input [(ngModel)]="ContraUserConfir" name="contraUserConfir2" class="rounded-input-6" type="password" placeholder="Altura"></ion-input>
+
+      <ion-button class="boton-personalizado" type="submit" shape="round" routerLink="/personaje">
+        <ion-label class="titulo-1-h2" slot="start">Siguiente</ion-label>
+      </ion-button>
+    </form>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="campa()">
+        <ion-img src="assets/Personaje/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons class="center">
+      <ion-button>
+        <ion-img src="assets/Personaje/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    
+    <ion-buttons slot="end">
+      <ion-button (click)="Confg()">
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

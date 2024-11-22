@@ -1,0 +1,47 @@
+<ion-content [fullscreen]="true">
+  <button class="banck-button" (click)="goBack()">
+    <ion-img class="banck" src="assets/imagenes_regis/Go_Back.png"></ion-img>
+  </button>
+  <ion-img class="imagen-fondo" src="assets/Imagenes_camp/Fondo.png"></ion-img>
+  <ion-img class="remini_letra" src="assets/Imagenes_camp/Crea_Campaña.png"></ion-img>
+
+    <button class="foto-button" (click)="abrirSelector()">
+      <img *ngIf="!imagenUrl" class="foto" src="assets/Imagenes_camp/Foto.png" />
+      <img *ngIf="imagenUrl" [src]="imagenUrl" class="foto" />
+    </button>
+
+    <!-- Input de archivo oculto -->
+    <input #fileInput type="file" (change)="onFileSelected($event)" accept="image/*" style="display: none;"/>
+  <form>
+    <ion-input [(ngModel)]="N_camp" class="rounded-input" type="text" placeholder="Nombre de la campaña"></ion-input>
+    <ion-input [(ngModel)]="ID_camp" class="rounded-input-2" type="text" placeholder="ID de la campaña"></ion-input>
+
+    <ion-label class="titulo-3-h2">
+      <a (click)="Generar_id()" style="color: #3880ff; text-decoration: underline;">
+        Generar ID Aleatorio
+      </a>
+    </ion-label>
+    <ion-button class="boton-personalizado" shape="round" (click)="campConfg()">
+      <ion-label class="titulo-1-h2" slot="start">Confirmar</ion-label>
+    </ion-button>
+  </form>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start"  type="submit" (click)="campa()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Campaing_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons class="center"  type="submit" (click)="pers()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Chacter_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end"  type="submit" (click)="Confg()">
+      <ion-button>
+        <ion-img src="assets/Imagenes_camp/Setting_Icon.png"></ion-img>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

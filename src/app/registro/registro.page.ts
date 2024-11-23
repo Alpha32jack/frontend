@@ -11,7 +11,8 @@ import { Router } from '@angular/router';
 })
 export class RegistroPage {
   studentForm: FormGroup;
-  imagenUrl: string | null = null;
+  imagenUrl: string = '';
+
 
   constructor(
     private router: Router, // Asegúrate de que el router está correctamente inyectado
@@ -23,6 +24,7 @@ export class RegistroPage {
       name: ['', [Validators.required, Validators.maxLength(10)]],
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required]],
+      profile_picture: [[''], Validators.required],
     });
   }
 
@@ -34,16 +36,25 @@ export class RegistroPage {
     document.querySelector<HTMLInputElement>('#fileInput')?.click();
   }
 
-  onFileSelected(event: Event) {
-    const file = (event.target as HTMLInputElement).files?.[0];
-    if (file) {
+  onFileChange(event: Event) {
+    const fileInput = event.target as HTMLInputElement;
+    if (fileInput?.files && fileInput.files.length > 0) {
+      const file = fileInput.files[0];
       const reader = new FileReader();
+  
       reader.onload = () => {
-        this.imagenUrl = reader.result as string;
+        this.imagenUrl = reader.result as string; // Save Base64 string
+        this.studentForm.patchValue({
+          profile_picture: this.imagenUrl, // Update form with Base64 string
+        });
       };
-      reader.readAsDataURL(file);
+  
+      reader.readAsDataURL(file); // Convert image to Base64
     }
   }
+  
+
+  
 
   async registerUser() {
     if (this.studentForm.valid) {

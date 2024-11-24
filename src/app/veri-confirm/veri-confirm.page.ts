@@ -2,9 +2,10 @@ import { Component, ViewChild, ElementRef } from '@angular/core';
 import { ToastController } from '@ionic/angular';
 import { NavController } from '@ionic/angular';
 @Component({
-  selector: 'app-veri-confirm',
-  templateUrl: './veri-confirm.page.html',
-  styleUrls: ['./veri-confirm.page.scss'],
+    selector: 'app-veri-confirm',
+    templateUrl: './veri-confirm.page.html',
+    styleUrls: ['./veri-confirm.page.scss'],
+    standalone: false
 })
 export class VeriConfirmPage {
   @ViewChild('codeInput0', { static: false }) codeInput0!: ElementRef;

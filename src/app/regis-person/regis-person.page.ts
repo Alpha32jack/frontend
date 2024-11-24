@@ -2,9 +2,10 @@ import { Component,ViewChild, ElementRef } from '@angular/core';
 import { NavController } from '@ionic/angular'; // Importamos NavController para la navegación
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 @Component({
-  selector: 'app-regis-person',
-  templateUrl: './regis-person.page.html',
-  styleUrls: ['./regis-person.page.scss'],
+    selector: 'app-regis-person',
+    templateUrl: './regis-person.page.html',
+    styleUrls: ['./regis-person.page.scss'],
+    standalone: false
 })
 export class RegisPersonPage  {
   User:string="";

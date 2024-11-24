@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 @Component({
-  selector: 'app-camp-onl',
-  templateUrl: './camp-onl.page.html',
-  styleUrls: ['./camp-onl.page.scss'],
+    selector: 'app-camp-onl',
+    templateUrl: './camp-onl.page.html',
+    styleUrls: ['./camp-onl.page.scss'],
+    standalone: false
 })
 export class CampOnlPage {
   items:string[]=[];

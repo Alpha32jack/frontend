@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-cre-person',
-  templateUrl: './cre-person.page.html',
-  styleUrls: ['./cre-person.page.scss'],
+    selector: 'app-cre-person',
+    templateUrl: './cre-person.page.html',
+    styleUrls: ['./cre-person.page.scss'],
+    standalone: false
 })
 export class CrePersonPage implements OnInit {
 

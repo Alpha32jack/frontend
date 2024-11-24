@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { NavController } from '@ionic/angular'; // Importamos NavController
 import { Router } from '@angular/router';
 @Component({
-  selector: 'app-cam-cont',
-  templateUrl: './cam-cont.page.html',
-  styleUrls: ['./cam-cont.page.scss'],
+    selector: 'app-cam-cont',
+    templateUrl: './cam-cont.page.html',
+    styleUrls: ['./cam-cont.page.scss'],
+    standalone: false
 })
 export class CamContPage  {
 

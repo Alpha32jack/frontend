@@ -3,9 +3,10 @@ import { NavController } from '@ionic/angular'; // Importamos NavController para
 import { ServiceService } from '../service.service';
 
 @Component({
-  selector: 'app-verifi-inden',
-  templateUrl: './verifi-inden.page.html',
-  styleUrls: ['./verifi-inden.page.scss'],
+    selector: 'app-verifi-inden',
+    templateUrl: './verifi-inden.page.html',
+    styleUrls: ['./verifi-inden.page.scss'],
+    standalone: false
 })
 export class VerifiIndenPage {
   /* email: string = ''; // Variable para almacenar el correo electrónico

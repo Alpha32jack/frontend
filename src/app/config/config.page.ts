@@ -3,9 +3,10 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { Navigation } from '@angular/router';
 import { NavController } from '@ionic/angular';
 @Component({
-  selector: 'app-config',
-  templateUrl: './config.page.html',
-  styleUrls: ['./config.page.scss'],
+    selector: 'app-config',
+    templateUrl: './config.page.html',
+    styleUrls: ['./config.page.scss'],
+    standalone: false
 })
 export class ConfigPage {
 

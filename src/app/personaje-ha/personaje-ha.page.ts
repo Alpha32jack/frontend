@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 @Component({
-  selector: 'app-personaje-ha',
-  templateUrl: './personaje-ha.page.html',
-  styleUrls: ['./personaje-ha.page.scss'],
+    selector: 'app-personaje-ha',
+    templateUrl: './personaje-ha.page.html',
+    styleUrls: ['./personaje-ha.page.scss'],
+    standalone: false
 })
 export class PersonajeHaPage implements OnInit {
   descripcion: string = ""; // El valor inicial de la descripción

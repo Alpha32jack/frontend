@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 @Component({
-  selector: 'app-personaje',
-  templateUrl: './personaje.page.html',
-  styleUrls: ['./personaje.page.scss'],
+    selector: 'app-personaje',
+    templateUrl: './personaje.page.html',
+    styleUrls: ['./personaje.page.scss'],
+    standalone: false
 })
 export class PersonajePage implements OnInit {
 

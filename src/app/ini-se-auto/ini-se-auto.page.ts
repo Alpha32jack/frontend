@@ -3,9 +3,10 @@ import { Router } from '@angular/router'; // Importamos NavController
 
 
 @Component({
-  selector: 'app-ini-se-auto',
-  templateUrl: './ini-se-auto.page.html',
-  styleUrls: ['./ini-se-auto.page.scss'],
+    selector: 'app-ini-se-auto',
+    templateUrl: './ini-se-auto.page.html',
+    styleUrls: ['./ini-se-auto.page.scss'],
+    standalone: false
 })
 export class IniSeAutoPage  {
 

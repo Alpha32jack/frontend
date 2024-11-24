@@ -4,9 +4,10 @@ import { Router } from '@angular/router';
 import { ServiceService } from '../service.service';
 
 @Component({
-  selector: 'app-ini-se',
-  templateUrl: './ini-se.page.html',
-  styleUrls: ['./ini-se.page.scss'],
+    selector: 'app-ini-se',
+    templateUrl: './ini-se.page.html',
+    styleUrls: ['./ini-se.page.scss'],
+    standalone: false
 })
 export class IniSePage {
   credentials = { email: '', password: '' }; // Credenciales del usuario

@@ -3,9 +3,10 @@ import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 
 @Component({
-  selector: 'app-part-onl-ju',
-  templateUrl: './part-onl-ju.page.html',
-  styleUrls: ['./part-onl-ju.page.scss'],
+    selector: 'app-part-onl-ju',
+    templateUrl: './part-onl-ju.page.html',
+    styleUrls: ['./part-onl-ju.page.scss'],
+    standalone: false
 })
 export class PartOnlJuPage  {
 

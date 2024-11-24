@@ -3,9 +3,10 @@ import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 
 @Component({
-  selector: 'app-historial',
-  templateUrl: './historial.page.html',
-  styleUrls: ['./historial.page.scss'],
+    selector: 'app-historial',
+    templateUrl: './historial.page.html',
+    styleUrls: ['./historial.page.scss'],
+    standalone: false
 })
 export class HistorialPage{
   items:string[]=[];

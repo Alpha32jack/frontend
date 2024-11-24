@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { NavController } from '@ionic/angular';
 @Component({
-  selector: 'app-personaje-inve',
-  templateUrl: './personaje-inve.page.html',
-  styleUrls: ['./personaje-inve.page.scss'],
+    selector: 'app-personaje-inve',
+    templateUrl: './personaje-inve.page.html',
+    styleUrls: ['./personaje-inve.page.scss'],
+    standalone: false
 })
 export class PersonajeInvePage implements OnInit {
 

@@ -3,9 +3,10 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular'; // Importamos NavController
 
 @Component({
-  selector: 'app-edit-camp',
-  templateUrl: './edit-camp.page.html',
-  styleUrls: ['./edit-camp.page.scss'],
+    selector: 'app-edit-camp',
+    templateUrl: './edit-camp.page.html',
+    styleUrls: ['./edit-camp.page.scss'],
+    standalone: false
 })
 export class EditCampPage{
 

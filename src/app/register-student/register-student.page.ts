@@ -3,9 +3,10 @@ import { ServiceService } from '../service.service';
 import { ToastController } from '@ionic/angular';
 
 @Component({
-  selector: 'app-register-student',
-  templateUrl: './register-student.page.html',
-  styleUrls: ['./register-student.page.scss'],
+    selector: 'app-register-student',
+    templateUrl: './register-student.page.html',
+    styleUrls: ['./register-student.page.scss'],
+    standalone: false
 })
 export class RegisterStudentPage {
   student: any = {

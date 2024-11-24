@@ -4,9 +4,10 @@ import { NavController } from '@ionic/angular';
 import { InfiniteScrollCustomEvent } from '@ionic/angular';
 
 @Component({
-  selector: 'app-camp-config',
-  templateUrl: './camp-config.page.html',
-  styleUrls: ['./camp-config.page.scss'],
+    selector: 'app-camp-config',
+    templateUrl: './camp-config.page.html',
+    styleUrls: ['./camp-config.page.scss'],
+    standalone: false
 })
 export class CampConfigPage implements OnInit {
 

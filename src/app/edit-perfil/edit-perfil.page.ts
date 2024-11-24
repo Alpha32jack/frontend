@@ -2,9 +2,10 @@ import { Component,ViewChild, ElementRef } from '@angular/core';
 import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular'; // Importamos NavController
 @Component({
-  selector: 'app-edit-perfil',
-  templateUrl: './edit-perfil.page.html',
-  styleUrls: ['./edit-perfil.page.scss'],
+    selector: 'app-edit-perfil',
+    templateUrl: './edit-perfil.page.html',
+    styleUrls: ['./edit-perfil.page.scss'],
+    standalone: false
 })
 export class EditPerfilPage  {
 

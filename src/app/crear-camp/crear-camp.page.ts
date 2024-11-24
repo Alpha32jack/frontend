@@ -3,9 +3,10 @@ import { DomSanitizer, SafeUrl } from '@angular/platform-browser';
 import { NavController } from '@ionic/angular'; // Importamos NavController
 
 @Component({
-  selector: 'app-crear-camp',
-  templateUrl: './crear-camp.page.html',
-  styleUrls: ['./crear-camp.page.scss'],
+    selector: 'app-crear-camp',
+    templateUrl: './crear-camp.page.html',
+    styleUrls: ['./crear-camp.page.scss'],
+    standalone: false
 })
 export class CrearCampPage {
   N_camp:string=("");
